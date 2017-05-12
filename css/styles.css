@@ -1,3 +1,6 @@
+body {
+  font-family: 'Luckiest Guy', cursive;
+}
 .col-md-4 {
   border-style: ridge;
   border-color: red;
@@ -6,4 +9,8 @@
 .col-md-8 {
   border-style: ridge;
   border-color: red;
+}
+
+form {
+  display: none;
 }

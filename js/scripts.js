@@ -38,5 +38,12 @@ console.log(newPizza);
 console.log(pizzaToppings);
 console.log(pizzaTotal);
   });
+// Show menu click funstion
+$("#orderNow").click(function(event){
+  event.preventDefault();
+  $("#welcome").hide();
+  $("#pie-builder").fadeIn(3000);
+
+});
 
 });
