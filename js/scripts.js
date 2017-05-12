@@ -1,8 +1,7 @@
 // BACK END LOGIC
 
 // PIZZA CONSTUCTOR
-function Pizza(size) {
-  this.size = size;
+function Pizza() {
   this.toppings = [];
 }
 
@@ -16,6 +15,8 @@ Pizza.prototype.addToppings = function() {
 
 }
 
+
+
 // FRONT END LOGIC
 $(document).ready(function(){
 // initialize new pizza object
@@ -24,10 +25,15 @@ var newPizza = new Pizza();
 // Submit click function for all pizzas
 $("#pie-builder").submit(function(event) {
   event.preventDefault();
-  var pizzaSize = parseFloat($("#size-input:checked").val());
-  var addSize = newPizza.addPizzaSize(pizzaSize);
-console.log(pizzaSize);
+
+
+  var pizzaToppings = $("input:checkbox(name=type):checked").each(function(){
+    newPizza.toppings.push($(this).val());
+  });
+
+
 console.log(newPizza);
+console.log(pizzaToppings);
   });
 
 });
