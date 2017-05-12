@@ -31,6 +31,8 @@ $("#pie-builder").submit(function(event) {
   });
 // Loops through each element in this.toppings array and adds them TOGETHER
   var pizzaTotal = newPizza.addToppings(newPizza.toppings);
+// Displays the total coast of the users pizzaTotal
+$(".user-pizza-total").text(newPizza.pizzaTotalPrice);
 
 console.log(newPizza);
 console.log(pizzaToppings);
