@@ -21,25 +21,25 @@
             <h3>Pick the size of your Pie:</h3>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="12" id="small-input">
+                <input type="checkbox" value="12" id="size-input">
               Small (12")
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="14" id="medium-input">
+                <input type="checkbox" value="14" id="size-input">
                 Medium (14")
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="16" id="large-input">
+                <input type="checkbox" value="16" id="size-input">
                 Large (16")
               </label>
             </div>
             <div class="checkbox">
               <label>
-                <input type="checkbox" value="18" id="family-input">
+                <input type="checkbox" value="18" id="size-input">
                 Family-Size (18")
               </label>
             </div>
@@ -232,8 +232,14 @@
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-success" id="order">Order Now!</button>
+        <button type="submit" class="btn btn-success" id="order">Order Now!</button>
       </form>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Your total is <span class="user-pizza-total"></span></p>
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
