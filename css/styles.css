@@ -58,6 +58,9 @@ form {
     width: 50%;
 }
 
+.total-button {
+  float: left;
+}
 
 #welcome {
   text-align: center;
@@ -86,6 +89,4 @@ form {
   border-color: #F5E70C;
   border-width: thick;
   background-color: #A2F1B8;
-  float: right;
-  margin-right: 245px;
 }

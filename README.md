@@ -7,17 +7,14 @@
 
 * I want this website to be able to allow the user select and build their own pizza. It should be able to take the user input, and give them a price for their pizza upon their order.
 
+## Specs
 
-## Implementation Plan
-
-| Objective | Implementation | Status |
+| Behavior | Example Input: | Example Output: |
 |:-------------:|:-------------:|:-------------:|
-| Create a new project | xxx | xxx |
-| xxx | xxx | xxx |
-| xxx | xxx | xxx |
-| xxx | xxx | xxx |
-| xxx | xxx | xxx |
-| xxx | xxx | xxx |
+| New Pizza Constructor initialized at document ready | ... | ... |
+| object receives user input and stores it | ... | ... |
+| Pizza Constructor Prototype adds the values of all toppings together | ... | ... |
+| displays info and price for Pizza Object | ... | ... |
 
 ## Setup/Installation Requirements
 
@@ -37,7 +34,7 @@ There are no known bugs at this time, but please contact the creator with questi
   * HTML
   * CSS (Bootstrap)
   * JavaScript (jQuery)
-  
+
 ## Licensing
 This application features MIT licensing.
 
