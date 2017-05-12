@@ -1,16 +1,28 @@
 body {
   font-family: 'Luckiest Guy', cursive;
+  text-shadow: 1px 1px 2px #fff;
+  background-color: #F5E70C;
+
 }
 .col-md-4 {
-  border-style: ridge;
-  border-color: red;
+
 }
 
 .col-md-8 {
-  border-style: ridge;
-  border-color: red;
+  display: inline-block;
 }
-
+.container {
+  /*background: rgba(181,162,241, 0.8);*/
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 50px;
+}
+.jumbotron {
+  color: #000;
+  background-image: url(../img/background3.jpg);
+  background-size: cover;
+  text-shadow: 6px 6px 8px #A2F1B8;
+}
 form {
   display: none;
 }
