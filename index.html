@@ -7,7 +7,6 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-    <link rel="stylesheet" href="animate.min.css">
     <title>Joey Hawthorne's Vegan 'ZAA Shopé</title>
   </head>
   <body>
@@ -15,232 +14,124 @@
       <div class="jumbotron">
         <h1>Joey Hawthorne's 'ZAA Shopé</h1>
       </div>
+      <!-- ROW 1 OF 3 -->
       <div class="row" id="welcome">
         <div class="col-md-12">
           <h1 class="animated shake">Welcome!!</h1>
           <button type="button" class="btn" name="orderNow" id="orderNow">Order Now</button>
         </div>
-
       </div>
-      <!-- ROW #1 OF TWO -->
+      <!-- ROW 2 OF 3 -->
       <form id="pie-builder">
         <div class="row">
           <!-- INPUT FOR USER TO PICK SIZE -->
           <div class="col-md-4">
             <h3>Pick the size of your Pie:</h3>
             <div class="checkbox">
-              <label>
-                <input type="checkbox" value="8" id="size-input">
-              Small (12")
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="10" id="size-input">
-                Medium (14")
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="12" id="size-input">
-                Large (16")
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="14" id="size-input">
-                Family-Size (18")
-              </label>
+              <ul>
+                <li><input type="checkbox" value="8" id="size-input"><label>Small (12")</label>
+                </li>
+                <li><input type="checkbox" value="10" id="size-input"><label>Medium (14")</label>
+                </li>
+                <li><input type="checkbox" value="12" id="size-input"><label>Large (16")</label>
+                </li>
+                <li><input type="checkbox" value="14" id="size-input"><label>Family-Size (18")</label>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- INPUT FOR USER TO PICK SAUCE -->
           <div class="col-md-4">
             <h3>Pick your SAUCE:</h3>
             <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".50">
-                Signature Red Sauce
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".50">
-                Spicy BBQ Marinara
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".50">
-                Creamy Alfredo Sauce
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".50">
-                In house Pesto Sauce
-              </label>
+              <ul>
+                <li><input type="checkbox" value=".50"><label>Signature Red Sauce</label>
+                </li>
+                <li><input type="checkbox" value=".50"><label>Spicy BBQ Marinara</label>
+                </li>
+                <li><input type="checkbox" value=".50"><label>Creamy Alfredo Sauce</label>
+                </li>
+                <li><input type="checkbox" value=".50"><label>In house Pesto Sauce</label>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- INPUT FOR THE USER TO PICK CHEESE -->
           <div class="col-md-4">
             <h3>Pick your Cheeses:</h3>
             <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".50">
-                Signature Mozzerella
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".50">
-                Parmesan Cheese
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".50">
-                Feta Cheese
-              </label>
+              <ul>
+                <li><input type="checkbox" value=".50"><label>Signature Mozzerella</label>
+                </li>
+                <li><input type="checkbox" value=".50"><label>Parmesan Cheese</label>
+                </li>
+                <li><input type="checkbox" value=".50"><label>Feta Cheese</label>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <!-- ROW #2 OF 2 -->
+        <!-- ROW 3 OF 3 -->
         <div class="row">
           <!-- USER INPUT FOR PROTEINS -->
           <div class="col-md-4">
             <h3>Pick your Proteins:</h3>
             <div class="checkbox">
-              <label>
-                <input type="checkbox" value="1.25">
-                Crumbled Veggie Sausage
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="1.25">
-                Tempeh Bacon
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="1.25">
-                Seitan Pepperoni
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value="1.25">
-                Smoked Yam Ham slices
-              </label>
+              <ul>
+                <li><input type="checkbox" value="1.25"><label>Crumbled Veggie Sausage</label>
+                </li>
+                <li><input type="checkbox" value="1.25"><label>Tempeh Bacon</label>
+                </li>
+                <li><input type="checkbox" value="1.25"><label>Seitan Pepperoni</label>
+                </li>
+                <li><input type="checkbox" value="1.25"><label>Smoked Yam Ham slices</label>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- USER INPUT FOR TOPPINGS -->
           <div class="col-md-8">
             <h3>Pick your Toppings:</h3>
             <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Artichoke Hearts
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Basil
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Spinach
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Garlic
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Pepperoncini
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Black Olives
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Kalamata Olives
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Zesty Green Olives
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Green Onions
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Red Onions
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Green Peppers
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Fresh Mushrooms
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Jalapeño Peppers
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Mama Lil’s Peppers
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Pineapple
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Roma Tomatoes
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" value=".75" id="topping-input">
-                Zucchini
-              </label>
+              <ul class="checkbox-grid">
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Artichoke Hearts</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Basil</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Spinach</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Garlic</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Pepperoncini</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>  Black Olives</label>
+                </li>
+                <li> <input type="checkbox" value=".75" id="topping-input"><label>Kalamata Olives</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Zesty Green Olives</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Green Onions</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Red Onions</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Green Peppers</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>  Fresh Mushrooms</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Jalapeño Peppers</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Mama Lil’s Peppers</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Pineapple</label>
+                </li>
+                <li><input type="checkbox" value=".75" id="topping-input"><label>Roma Tomatoes</label>
+                </li>
+                <li> <input type="checkbox" value=".75" id="topping-input"><label>Zucchini</label>
+                </li>
+              </ul>
             </div>
             <h3 id="userTotal">Your total is: $<span class="user-pizza-total"></span></h3>
-              <button type="submit" class="btn" id="order">Order Now!</button>
+            <button type="submit" class="btn" id="order">Place your Order Now!</button>
           </div>
         </div>
       </form>
