@@ -6,6 +6,11 @@ function Pizza(size) {
   this.toppings = [];
 }
 
+// PIZZA PROTOTYPE TO ADD SIZE TO PIZZ object
+Pizza.prototype.addPizzaSize = function(size) {
+  this.size = size;
+}
+
 // PIZZA PROTOTYPE TO ADD VALUES TOGETHER
 Pizza.prototype.addToppings = function() {
 
@@ -20,7 +25,9 @@ var newPizza = new Pizza();
 $("#pie-builder").submit(function(event) {
   event.preventDefault();
   var pizzaSize = parseFloat($("#size-input:checked").val());
+  var addSize = newPizza.addPizzaSize(pizzaSize);
 console.log(pizzaSize);
+console.log(newPizza);
   });
 
 });
