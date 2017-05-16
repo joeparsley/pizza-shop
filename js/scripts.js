@@ -20,6 +20,7 @@ var newPizza = new Pizza();
 // Submit click function for all User input Options
 $("#pie-builder").submit(function(event) {
   event.preventDefault();
+  newPizza.toppings = [];
 // Takes the value of all checkboxes that are checked and puts them in the pizza object
   var pizzaToppings = $("input:checkbox(name=type):checked").each(function(){
     newPizza.toppings.push(parseFloat($(this).val()));
